@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Carte artistique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <!-- Panneau de contrôle -->
+  <div class="ui">
+    <label><input type="checkbox" id="toggle-trame" checked> Afficher la trame</label>
+    <label>Opacité trame
+      <input type="range" id="opacity-trame" min="0" max="1" step="0.05" value="0.85">
+    </label>
+  </div>
+
+
+
+  <!-- Leaflet + ton script -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
